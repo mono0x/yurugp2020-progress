@@ -13,11 +13,13 @@ import {
   TableRow,
 } from "@mui/material"
 import {
+  BarController,
   BarElement,
   CategoryScale,
   Chart as ChartJS,
   Legend,
   LinearScale,
+  LineController,
   LineElement,
   PointElement,
   TimeScale,
@@ -32,6 +34,8 @@ import Header from "../../../components/Header"
 import { Item } from "../../../types"
 
 ChartJS.register(
+  BarController,
+  LineController,
   CategoryScale,
   LinearScale,
   BarElement,
